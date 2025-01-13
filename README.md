@@ -1,8 +1,12 @@
 # Algonquin Pet Store
 
-Welcome to the **Algonquin Pet Store** application. 
+Welcome to the **Algonquin Pet Store** application! This app will help you learn about how modern web applications work by combining several technologies into a working system. The application is built using microservices architecture, which means that different parts of the app work independently but communicate with each other. Here's what it includes:
 
-The Algonquin Pet Store is a full-stack web application. It consists of a Vue.js store-front, Node.js order-service, Rust-based product-service, and RabbitMQ for message brokering. These components work together to create a microservices architecture.
+- **Store Front (Vue.js):** The user interface where customers can browse and buy products.
+- **Order Service (Node.js):** Handles customer orders and communicates with other parts of the system.
+- **Product Service (Rust):** Manages product details like names, prices, and inventory.
+- **RabbitMQ:** A tool that helps different parts of the app communicate smoothly by sending messages.
+
 ![App UI](./Docs/app-ui.png)
 
 ## Table of Contents
@@ -21,7 +25,7 @@ The Algonquin Pet Store is a full-stack web application. It consists of a Vue.js
 
 ![App Architecture](./Docs/app-architecture.png)
 
-This Algonquin Pet Store application is built using a microservices architecture with the following components:
+The app uses a microservices architecture. This means that different parts of the app (called "services") do specific jobs and talk to each other to get things done. Here's how they fit together:
 
 - **Store Front (Vue.js)**: A front-end application where customers can browse and order products.
 - **Order Service (Node.js)**: Manages customer orders and interacts with RabbitMQ for message queuing.
@@ -46,10 +50,10 @@ Navigate to the `store-front` folder and follow the instructions in its [Store-F
 
 ## Running the Full Application
 
-Once you have all the services running:
+Once all the services are running:
 
-- Visit the store-front on http://localhost:8080
-- The store-front communicates with the product-service and order-service
-- Orders are sent to RabbitMQ for processing
+- Open your browser and go to http://localhost:8080 to see the store front.
+- The store front will show product listings from the Product Service.
+- When you place an order, it will be processed by the Order Service, and RabbitMQ will handle the messaging.
 
-
+That's it! You're now ready to use and explore the Algonquin Pet Store application. 🎉
